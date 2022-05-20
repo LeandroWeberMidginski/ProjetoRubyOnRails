@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @albun %>
+
+<div>
+  <%= link_to "Edit this albun", edit_albun_path(@albun) %> |
+  <%= link_to "Back to albuns", albuns_path %>
+
+  <%= button_to "Destroy this album", @albun, method: :delete %>
+</div>

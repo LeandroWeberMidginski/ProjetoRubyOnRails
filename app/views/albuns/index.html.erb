@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Albuns</h1>
+<div id="albuns">
+  <% @albuns.each do |albun| %>
+    <%= render albun %>
+    <p>
+      <%= link_to "Show this album", albun %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New album", new_albun_path %>
